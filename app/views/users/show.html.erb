@@ -1,0 +1,13 @@
+<h1>User Profile</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Role</th>
+  </tr>
+    <tr>
+      <td><%= @user.name %></td>
+      <% if @user.is_admin? %>
+      <td>Admin</td>
+      <% end %>
+</table>
