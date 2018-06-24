@@ -1,0 +1,22 @@
+<h1>User List</h1>
+
+<table>
+ <tr>
+    <th>Name</th>
+    <th>Role</th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td>
+      	<% if user.is_admin? %>
+      		
+      	 Admin
+      	
+      	<% end %>
+      	
+      </td>
+    </tr>
+    
+  <% end %>
+</table>
